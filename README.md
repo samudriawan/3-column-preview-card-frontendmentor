@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-[Solution URL]() |
-[Live Site URL]() |
+[Solution URL](https://www.frontendmentor.io/solutions/responsive-mobilefirst-with-sass-and-flexbox-QoJ05Ujsi) |
+[Live Site URL](https://samudriawan.github.io/3-column-preview-card-frontendmentor/) |
 [Challenge](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
 
 ## My process
