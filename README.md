@@ -39,7 +39,6 @@ Users should be able to:
 - Semantic HTML5 markup
 - Flexbox
 - Mobile-first workflow
-- JavaScript
 - [SASS](https://sass-lang.com/) - CSS Preprocessor
 
 ### What I learned
