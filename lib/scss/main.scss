@@ -1,0 +1,131 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	min-height: 100%;
+	background-color: $neutral-gray-color;
+	@include flex(center, column);
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	@include flex(center, column);
+}
+
+// start card
+.card {
+	width: 300px;
+	border-radius: 0.5em;
+	overflow: hidden;
+	@include flex(flex-start, column);
+
+	@include media {
+		width: 820px;
+		flex-direction: row;
+	}
+
+	// start card item
+	&-item {
+		padding: 2em 2.05em;
+		padding-bottom: 4em;
+
+		@include media {
+			height: 400px;
+		}
+
+		// start background colod
+		&.sedans {
+			background-color: $primary-color;
+		}
+
+		&.suvs {
+			background-color: $secondary-color;
+		}
+		&.luxury {
+			background-color: $tertiary-color;
+		}
+		// end background color
+
+		// start card image top
+		&-img {
+			width: 50px;
+			height: auto;
+			// padding-bottom: 1em;
+		}
+		// end card image top
+
+		// start card item body
+		&-body {
+			h1 {
+				font-family: $fm-headings;
+				text-transform: uppercase;
+				padding: 0.5em 0;
+				color: $neutral-gray-color;
+			}
+			p {
+				font-family: $fm-paragraphs;
+				font-size: $f-size;
+				color: $neutral-white-color;
+				padding-bottom: 1em;
+				line-height: 1.5;
+			}
+			a {
+				text-decoration: none;
+				text-transform: capitalize;
+				font-family: $fm-paragraphs;
+				font-size: $f-size;
+			}
+
+			// start button
+			.btn {
+				position: relative;
+				top: 1.2em;
+				margin: 5em 0;
+				padding: 0.7em 2em;
+				background-color: $neutral-gray-color;
+				border-radius: 2em;
+				color: #000;
+				mix-blend-mode: screen;
+				cursor: pointer;
+
+				@include media {
+					top: 4em;
+					&:hover {
+						color: $neutral-gray-color;
+						background-color: transparent;
+						border: 2px solid $neutral-gray-color;
+					}
+				}
+			}
+			//end button
+		}
+		// end card item body
+	}
+	// end card item
+}
+// end card
+
+// attribution
+.attribution {
+	margin-top: auto;
+	font-size: 11px;
+	text-align: center;
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}

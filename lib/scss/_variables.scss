@@ -1,0 +1,16 @@
+// color
+$primary-color: hsl(31, 77%, 52%); //Bright orange
+$secondary-color: hsl(184, 100%, 22%); //Dark cyan
+$tertiary-color: hsl(179, 100%, 13%); //Very dark cyan
+$neutral-white-color: hsla(0, 0%, 100%, 0.75); //Transparent white (paragraphs)
+$neutral-gray-color: hsl(0, 0%, 95%); //Very light gray (background, headings, buttons)
+
+// typography
+$f-size: 15px;
+$fm-headings: 'Big Shoulders Display', cursive; //Weights: 700
+$fm-paragraphs: 'Lexend Deca', sans-serif; //Weights: 400
+$f-weight-reguler: 400;
+$f-weight-bold: 700;
+
+// media query breakpoint
+$breakpoint: 768.02px;
